@@ -1,0 +1,172 @@
+
+R version 3.2.3 (2015-12-10) -- "Wooden Christmas-Tree"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> lintr::lint("Problem_2.R")
+Problem_2.R:2:1: style: Use two spaces to indent, never tabs.
+	xminFahrenheit <- xmin*1.8 +32
+^
+Problem_2.R:4:2: style: Commented code should be removed.
+## NOTE: always leave space before and after <-, -, +, *, /. Leave a blank after commas. Leave blanks around 
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:5:2: style: Commented code should be removed.
+## <, >, ==, <=, =>, etc.
+ ^~~~~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:8:2: style: Commented code should be removed.
+## GOOTD: data.frame(x, y)
+ ^~~~~~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:11:16: style: Commas should always have a space after.
+xmin <- c(23.0,20.5,28.2,20.3,22.4,17.2,18.2)
+               ^
+Problem_2.R:11:21: style: Commas should always have a space after.
+xmin <- c(23.0,20.5,28.2,20.3,22.4,17.2,18.2)
+                    ^
+Problem_2.R:11:26: style: Commas should always have a space after.
+xmin <- c(23.0,20.5,28.2,20.3,22.4,17.2,18.2)
+                         ^
+Problem_2.R:11:31: style: Commas should always have a space after.
+xmin <- c(23.0,20.5,28.2,20.3,22.4,17.2,18.2)
+                              ^
+Problem_2.R:11:36: style: Commas should always have a space after.
+xmin <- c(23.0,20.5,28.2,20.3,22.4,17.2,18.2)
+                                   ^
+Problem_2.R:11:41: style: Commas should always have a space after.
+xmin <- c(23.0,20.5,28.2,20.3,22.4,17.2,18.2)
+                                        ^
+Problem_2.R:12:17: style: Commas should always have a space after.
+xmax <- c( 25.0,22.8,31.2,27.3,28.4,20.2, 24.1)
+                ^
+Problem_2.R:12:22: style: Commas should always have a space after.
+xmax <- c( 25.0,22.8,31.2,27.3,28.4,20.2, 24.1)
+                     ^
+Problem_2.R:12:27: style: Commas should always have a space after.
+xmax <- c( 25.0,22.8,31.2,27.3,28.4,20.2, 24.1)
+                          ^
+Problem_2.R:12:32: style: Commas should always have a space after.
+xmax <- c( 25.0,22.8,31.2,27.3,28.4,20.2, 24.1)
+                               ^
+Problem_2.R:12:37: style: Commas should always have a space after.
+xmax <- c( 25.0,22.8,31.2,27.3,28.4,20.2, 24.1)
+                                    ^
+Problem_2.R:18:9: style: Put spaces around all infix operators.
+abs(xmax-xmin)
+       ~^~
+Problem_2.R:20:1: style: Variable and function names should be all lowercase.
+avgMinTemp <- mean(xmin)
+^~~~~~~~~~
+Problem_2.R:21:1: style: Variable and function names should be all lowercase.
+avgMaxTemp <- mean (xmax)
+^~~~~~~~~~
+Problem_2.R:23:14: style: Variable and function names should be all lowercase.
+xmin[ xmin < avgMinTemp]
+             ^~~~~~~~~~
+Problem_2.R:25:13: style: Variable and function names should be all lowercase.
+xmax[xmax > avgMaxTemp]
+            ^~~~~~~~~~
+Problem_2.R:28:1: style: lines should not be more than 80 characters.
+date <- c('03Mon18', '04Tue18', '05Wed18', '04Thu18', '05Fri18', '06Sat18', '07Sun18')
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:28:11: style: Only use double-quotes.
+date <- c('03Mon18', '04Tue18', '05Wed18', '04Thu18', '05Fri18', '06Sat18', '07Sun18')
+          ^~~~~~~~~
+Problem_2.R:28:22: style: Only use double-quotes.
+date <- c('03Mon18', '04Tue18', '05Wed18', '04Thu18', '05Fri18', '06Sat18', '07Sun18')
+                     ^~~~~~~~~
+Problem_2.R:28:33: style: Only use double-quotes.
+date <- c('03Mon18', '04Tue18', '05Wed18', '04Thu18', '05Fri18', '06Sat18', '07Sun18')
+                                ^~~~~~~~~
+Problem_2.R:28:44: style: Only use double-quotes.
+date <- c('03Mon18', '04Tue18', '05Wed18', '04Thu18', '05Fri18', '06Sat18', '07Sun18')
+                                           ^~~~~~~~~
+Problem_2.R:28:55: style: Only use double-quotes.
+date <- c('03Mon18', '04Tue18', '05Wed18', '04Thu18', '05Fri18', '06Sat18', '07Sun18')
+                                                      ^~~~~~~~~
+Problem_2.R:28:66: style: Only use double-quotes.
+date <- c('03Mon18', '04Tue18', '05Wed18', '04Thu18', '05Fri18', '06Sat18', '07Sun18')
+                                                                 ^~~~~~~~~
+Problem_2.R:28:77: style: Only use double-quotes.
+date <- c('03Mon18', '04Tue18', '05Wed18', '04Thu18', '05Fri18', '06Sat18', '07Sun18')
+                                                                            ^~~~~~~~~
+Problem_2.R:32:32: style: Put spaces around all infix operators.
+temperatures <- data.frame(xmin= xmin, xmax=xmax)
+                              ~^
+Problem_2.R:32:44: style: Put spaces around all infix operators.
+temperatures <- data.frame(xmin= xmin, xmax=xmax)
+                                          ~^~
+Problem_2.R:37:9: style: Variable and function names should be all lowercase.
+	xminFahrenheit <- xmin*1.8 +32
+        ^~~~~~~~~~~~~~
+Problem_2.R:37:24: style: Put spaces around all infix operators.
+	xminFahrenheit <- xmin*1.8 +32
+                      ~^~~
+Problem_2.R:37:31: style: Put spaces around all infix operators.
+	xminFahrenheit <- xmin*1.8 +32
+                             ~^~
+Problem_2.R:48:14: style: Variable and function names should be all lowercase.
+temperatures$xminFahrenheit 
+             ^~~~~~~~~~~~~~
+Problem_2.R:48:28: style: Trailing whitespace is superfluous.
+temperatures$xminFahrenheit 
+                           ^
+Problem_2.R:50:16: style: Only use double-quotes.
+temperatures[, 'xminFahrenheit']
+               ^~~~~~~~~~~~~~~~
+Problem_2.R:56:1: style: Variable and function names should be all lowercase.
+tempFahreinheit <- data.frame(xminFahrenheit= xminFahrenheit, {
+^~~~~~~~~~~~~~~
+Problem_2.R:56:45: style: Put spaces around all infix operators.
+tempFahreinheit <- data.frame(xminFahrenheit= xminFahrenheit, {
+                                           ~^
+Problem_2.R:56:47: style: Variable and function names should be all lowercase.
+tempFahreinheit <- data.frame(xminFahrenheit= xminFahrenheit, {
+                                              ^~~~~~~~~~~~~~
+Problem_2.R:57:3: style: Variable and function names should be all lowercase.
+  xmaxFahrenheint <- xmax*1.8 +32
+  ^~~~~~~~~~~~~~~
+Problem_2.R:57:26: style: Put spaces around all infix operators.
+  xmaxFahrenheint <- xmax*1.8 +32
+                        ~^~
+Problem_2.R:57:31: style: Put spaces around all infix operators.
+  xmaxFahrenheint <- xmax*1.8 +32
+                              ^~
+Problem_2.R:59:1: style: Variable and function names should be all lowercase.
+tempFahreinheit
+^~~~~~~~~~~~~~~
+Problem_2.R:65:3: style: Variable and function names should be all lowercase.
+  xminFahrenheit <- xmin * (9/5) + 32
+  ^~~~~~~~~~~~~~
+Problem_2.R:65:30: style: Put spaces around all infix operators.
+  xminFahrenheit <- xmin * (9/5) + 32
+                            ~^~
+Problem_2.R:66:3: style: Variable and function names should be all lowercase.
+  xmaxFahrenheit <- xmax * (9/5) + 32
+  ^~~~~~~~~~~~~~
+Problem_2.R:66:30: style: Put spaces around all infix operators.
+  xmaxFahrenheit <- xmax * (9/5) + 32
+                            ~^~
+Problem_2.R:69:1: style: Variable and function names should be all lowercase.
+temperaturesFahrenheit <- temeratures[, c('xminFahrenheit', 'xmaxFahrenheit)]
+^~~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:69:43: style: Only use double-quotes.
+temperaturesFahrenheit <- temeratures[, c('xminFahrenheit', 'xmaxFahrenheit)]
+                                          ^~~~~~~~~~~~~~~~
+Problem_2.R:69:61: error: unexpected INCOMPLETE_STRING
+temperaturesFahrenheit <- temeratures[, c('xminFahrenheit', 'xmaxFahrenheit)]
+                                                            ^
+> 
+> 
